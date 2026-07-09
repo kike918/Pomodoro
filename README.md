@@ -1,262 +1,173 @@
-<a href="https://super-productivity.com/"><img alt="Banner" src="docs/screens/banner.png"/></a>
+# Super Productivity DCP Lab
 
-<div style="height:20px;"></div>
+**DCP evaluation lab based on Super Productivity for task management, focus, time tracking and GitHub-integrated workflows.**
 
-<p align="center">
-  <strong>
-    An advanced todo list app with timeboxing & time tracking capabilities that supports importing tasks from your calendar, Jira, GitHub and others
-  </strong>
-<p>
+> This repository is a Digital Consulting Plus evaluation and integration lab based on the open-source **Super Productivity** project. It is not presented as an original DCP product and does not replace the upstream project or its community.
 
-<p align="center">
-  :globe_with_meridians: <a href="https://app.super-productivity.com">Open Web App</a> or :computer: <a href="https://github.com/super-productivity/super-productivity/wiki/2.01-Downloads-and-Install">Download</a>
-</p>
+## Why this lab exists
 
-<br/>
+Digital Consulting Plus is evaluating Super Productivity as a **personal execution layer** inside a broader operating model that already includes GitHub, KIKE_OS, n8n and Google Calendar.
 
-<!-- The <a> and <img> elements are intentionally made without space.
-     Because of the extra whitespace characters in <a>, makes blue underline lines appear for them.
-     Please do not change this formatting, so as not to make them.
--->
-<p align="center">
-  <a href="https://lbesson.mit-license.org"><img alt="MIT license" src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square"/></a>
-  &nbsp;
-  <a href="https://github.com/super-productivity/super-productivity/discussions"><img alt="GitHub Discussions" src="https://img.shields.io/badge/Community-Discussions-blue?style=flat-square&logo=github"/></a>
-</p>
+The working hypothesis is:
 
-<p align="center">
-  <a href="https://www.reddit.com/r/superProductivity/"><img alt="Reddit Community" src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" width="85"/></a>
-  &nbsp;
-  <a href="https://mastodon.social/@superproductivity"><img alt="Super Productivity on Mastodon" src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white" width="105"/></a>
-  &nbsp;
-  <a href="https://x.com/intent/post?text=Super%20Productivity%20%20https%3A%2F%2Fsuper-productivity.com"><img alt="Tweet" src="https://img.shields.io/badge/TWEET-%23000000.svg?style=for-the-badge&logo=X" width="90"/></a>
-</p>
+```text
+GitHub
+  Shared engineering execution
+  Issues · Pull Requests · Projects · Code
 
-<p align="center">
-  <a href="https://youtu.be/_mvMXWLsL-8"><img src="https://github.com/user-attachments/assets/15384cae-8ba3-4474-bc2c-13e7765c2dd1" alt="animated"/></a>
-</p>
+KIKE_OS
+  Strategic memory and operational knowledge
+  Context · Decisions · Processes · Architecture
 
-## :computer: Downloads & Install
+n8n
+  Automation and orchestration
+  Routing · Summaries · Notifications · Sync workflows
 
-<p align="center">
-  <a href='https://flathub.org/apps/com.super_productivity.SuperProductivity' target="_blank"> <img alt='Get it on Flathub'src='https://flathub.org/api/badge?locale=en' height="30"/></a>
-  <a href="https://snapcraft.io/superproductivity" target="_blank"><img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" height="30"/></a>
-  <a href='//www.microsoft.com/store/apps/9NHFVG8361TW?cid=storebadge&ocid=badge' target="_blank"><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' height="30"/></a>
-  <a href='//play.google.com/store/apps/details?id=com.superproductivity.superproductivity' target="_blank"><img src='docs/screens/google-play-badge.svg' alt='Play Store Badge' height="30"/></a>
-  <a href='//f-droid.org/en/packages/com.superproductivity.superproductivity' target="_blank"><img src='https://f-droid.org/assets/fdroid-logo-text_S0MUfk_FsnAYL7n2MQye-34IoSNm6QM6xYjDnMqkufo=.svg' alt='F-Droid Badge' height="30"/></a>
-  <a href='http://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/super-productivity/super-productivity/releases'><img src='https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/badge_obtainium.png' alt='Obtanium Badge' height="30"/></a>
-  <a href='//apps.apple.com/app/super-productivity/id1482572463?l=en' target="_blank"><img src='docs/screens/app-store-badge.svg' alt='App Store Badge' height="30"/></a>
-</p>
+Google Calendar
+  Meetings and hard time commitments
 
-<p align="center">
-  <strong>For all current downloads, package links, and platform-specific notes:
-    <a href="https://github.com/super-productivity/super-productivity/wiki/2.01-Downloads-and-Install" target="_blank">
-      check the wiki
-    </a>
-  </strong><br/>
-  <a href="https://github.com/super-productivity/super-productivity/wiki/2.01-Downloads-and-Install" target="_blank">
-    <img
-      src="docs/screens/get-it-on-github.webp"
-      alt="Get it on GitHub"
-      height="120"
-    />
-  </a>
-</p>
+Super Productivity
+  Personal execution
+  Focus · Timeboxing · Time tracking · Daily planning
+```
 
-<hr>
-<div style="height:20px;"></div>
+The objective is not to build another task manager. The objective is to determine whether Super Productivity can help DCP improve execution, focus, time visibility and reporting while keeping each system in a clear role.
 
-<p align="center">
-  <a href="https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-rahunok-dlya-gumanitarnoyi-dopomogi-ukrayintsyam-postrajdalim-vid-rosiyskoyi-agresiyi" target="_blank">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
-      alt="Ukraine Flag"
-      height="120"
-    /><br/>
-    <strong>Humanitarian Aid for Ukraine</strong><br/>
-    Support humanitarian relief via the official National Bank of Ukraine account.
-  </a>
-</p>
+## DCP evaluation scope
 
-<hr>
+The lab is currently evaluating:
 
-## :heavy_check_mark: Features
+- personal task planning;
+- Pomodoro and focus sessions;
+- timeboxing;
+- time tracking by product, client and workstream;
+- GitHub Issue integration;
+- desktop and mobile workflow fit;
+- offline and privacy characteristics;
+- calendar-aware execution;
+- reporting opportunities;
+- integration potential with n8n and DCP operational reporting.
 
-- **Keep organized and focused!** Plan and categorize your tasks using sub-tasks, projects and tags and color code them as needed.
-- Use **timeboxing** and **track your time**. Create time sheets and work summaries in a breeze to easily export them to your company's time tracking system.
-- Helps you to **establish healthy & productive habits**:
-  - A **break reminder** reminds you when it's time to step away.
-  - The **anti-procrastination feature** helps you gain perspective when you really need to.
-  - Need some extra focus? A **Pomodoro timer** is also always at hand.
-  - **Collect personal metrics** to see, which of your work routines need adjustments.
-- Integrate with **Jira**, **Trello**, **GitHub**, **GitLab**, **Gitea**, **OpenProject**, **Linear**, **ClickUp** and **Azure DevOps**. Auto import tasks assigned to you, plan the details locally, automatically create work logs, and get notified immediately, when something changes.
-- Basic **CalDAV** integration.
-- Back up and synchronize your data across multiple devices with **Dropbox** and **WebDAV** support
-- Attach context information to tasks and projects. Create **notes**, attach **files** or create **project-level bookmarks** for links, files, and even commands.
-- Super Productivity **respects your privacy** and **does NOT collect any data** and there are no user accounts or registration. **You decide where you store your data!**
-- It's **free** and **open source** and always will be.
+## Initial DCP use cases
 
-And much more!
+### Normia
+Execution of discovery, architecture, product definition, documentation and implementation work.
 
-<a href="https://youtu.be/_mvMXWLsL-8"><img alt="Work View with global links" src="docs/screens/screen_standard.png" width="100%"></a>
+### MicroPOS
+Architecture research, offline-first and edge experiments, hardware lab work and product definition.
 
-> [!NOTE]
-> The web version has some limitations: See the **[Web App vs Desktop comparison](https://github.com/super-productivity/super-productivity/wiki/3.05-Web-App-vs-Desktop)** for more details.
+### FalconCDT
+Engineering execution, QA, operational tasks and separation of core product work from client-specific delivery effort.
 
-## :book: Documentation and Guides
+### DCP Consulting
+Time visibility by client, delivery type and workstream, with future support for service reporting and estimation improvement.
 
-<div style="display: flex; gap: 30px; align-items: flex-start;">
+### DCP Commercial
+Proposal preparation, follow-ups and commercial execution.
 
-  <!-- Getting Started -->
-  <div style="flex: 1;">
-    <h3>Getting Started</h3>
-    <ul>
-      <li><a href="https://dev.to/johannesjo/getting-started-with-super-productivity-2791">Getting started guide</a> (article)</li>
-      <li><a href="https://www.youtube.com/watch?v=VoF2_RSdNXA">Video walkthrough</a> (YouTube)</li>
-      <li><a href="https://dev.to/johannesjo/the-prioritising-scheme-how-to-eat-the-frog-with-super-productivity-mlk">Eat the frog prioritizing scheme</a></li>
-    </ul>
-    <p><strong>Starting Point in Wiki:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/1.01-First-Steps">First steps</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.00-Reference">Reference</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.00-How_To">How-To</a>
-    </p>
-    <p><strong>Productivity Tips:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.03-Keyboard-Shortcuts">Keyboard Shortcuts</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.04-Short-Syntax">Short Syntax</a>
-    </p>
-    <p><strong>Need Help?</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/discussions">Visit the discussions page</a>
-    </p>
-    <p>See the bottom of the README for more information on the documentation.</p>
-  </div>
+### SipDolce Labs
+Experiment planning and time visibility across coffee processes, hardware, IoT, traceability and technical validation.
 
-  <!-- Advanced Topics -->
-  <div style="flex: 1;">
-    <h3>Advanced Topics</h3>
-    <p>Here are some other topics covered in the
-      <a href="https://github.com/super-productivity/super-productivity/wiki">official wiki</a>:
-    </p>
-    <p><strong>Development:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.11-Run-the-Development-Server">Run dev server</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.12-Package-the-App">Package the app</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.14-Build-for-Android">Build for Android</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.13-Run-with-Docker">Run with Docker</a>
-    </p>
-    <p><strong>Data Management:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/4.23-Managing-Your-Data">User Data</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.07-Issue-Integration-Comparison">Issue Providers</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.08-Sync-Integration-Comparison">Sync Providers</a>
-    </p>
-    <p><strong>Customization:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/2.15-Develop-a-Plugin">Plugins</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.09-Theming">Themes</a>
-    </p>
-    <p><strong>APIs:</strong><br>
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.01-API#1-sync-server-rest-api">Sync Server</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.01-API#2-plugin-api">Plugins</a> •
-      <a href="https://github.com/super-productivity/super-productivity/wiki/3.01-API#3-local-rest-api">REST</a>
-    </p>
-  </div>
-</div>
+## DCP documentation
 
-## Community
+The DCP-specific evaluation layer lives under:
 
-The development of Super Productivity is driven by a wonderful community of users and contributors. Thank you all so much for your support!
+```text
+docs/dcp/
+├── DCP_EVALUATION.md
+├── DCP_USE_CASES.md
+├── INTEGRATION_ARCHITECTURE.md
+├── GAP_ANALYSIS.md
+└── PILOT_PLAN.md
+```
 
-<p>
-  :eyes:
-  <a href='https://github.com/super-productivity/awesome-super-productivity'>
-    Check out our awesome curated list of community-created resources about Super Productivity
-  </a>
-</p>
+### Documents
 
-### :hearts: Contributing
+- [`DCP_EVALUATION.md`](docs/dcp/DCP_EVALUATION.md) — evaluation principles, scope and decision gates.
+- [`DCP_USE_CASES.md`](docs/dcp/DCP_USE_CASES.md) — concrete DCP product and business use cases.
+- [`INTEGRATION_ARCHITECTURE.md`](docs/dcp/INTEGRATION_ARCHITECTURE.md) — role of GitHub, KIKE_OS, n8n, Calendar and Super Productivity.
+- [`GAP_ANALYSIS.md`](docs/dcp/GAP_ANALYSIS.md) — current fit/gap matrix and development decision rules.
+- [`PILOT_PLAN.md`](docs/dcp/PILOT_PLAN.md) — proposed 14-day internal pilot.
 
-If you want to get involved, please check out the [CONTRIBUTING.md](CONTRIBUTING.md)
+## Operating principles
 
-There are several ways to help.
+1. **Adopt before customizing.**
+2. **Measure before extending.**
+3. **GitHub remains the shared engineering source of truth.**
+4. **KIKE_OS remains the strategic knowledge and decision system.**
+5. **n8n is used for automation and orchestration, not as a business data source.**
+6. **Super Productivity is evaluated first as a personal execution layer.**
+7. **Core divergence from upstream is a last resort.**
 
-1. **Spread the word:** More users mean more people testing and contributing to the app which in turn means better stability and possibly more and better features. You can vote for Super Productivity on [Slant](https://www.slant.co/topics/14021/viewpoints/7/~productivity-tools-for-linux~super-productivity), [Product Hunt](https://www.producthunt.com/posts/super-productivity), [Softpedia](https://www.softpedia.com/get/Office-tools/Diary-Organizers-Calendar/Super-Productivity.shtml) or on [AlternativeTo](https://alternativeto.net/software/super-productivity/), you can [tweet about it](https://twitter.com/intent/tweet?text=I%20like%20Super%20Productivity%20%20https%3A%2F%2Fsuper-productivity.com), share it on [LinkedIn](http://www.linkedin.com/shareArticle?mini=true&url=https://super-productivity.com&title=I%20like%20Super%20Productivity&), [reddit](http://www.reddit.com/submit?url=https%3A%2F%2Fsuper-productivity.com&title=I%20like%20Super%20Productivity) or any of your favorite social media platforms. Every little bit helps!
+## Extension strategy
 
-2. **Provide a Pull Request:** Here is a list of [the most popular community requests](https://github.com/super-productivity/super-productivity/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc) and here some info on **[how to run the development build](https://github.com/super-productivity/super-productivity/wiki/2.11-Run-the-Development-Server)** (wiki).
-   Please make sure that you're following the [commit message format](.github/CONTRIBUTING.md#commit-message-format) and to also include the issue number in your commit message, if you're fixing a particular issue (e.g.: `feat: add nice feature #31`).
+Preferred order:
 
-3. **[Answer questions](https://github.com/super-productivity/super-productivity/discussions)**: You know the answer to another user's problem? Share your knowledge!
+```text
+Configuration
+    ↓
+Operating conventions
+    ↓
+External automation
+    ↓
+Plugin or adapter
+    ↓
+Isolated extension
+    ↓
+Core fork divergence only if justified
+```
 
-4. **[Provide your opinion](https://github.com/super-productivity/super-productivity/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc+label%3A%22community+feedback+wanted%22):** Some community suggestions are controversial. Your input might be helpful and if it is just an up- or down-vote.
+## Pilot decision model
 
-5. **[Provide a more refined UI spec for existing feature requests](https://github.com/super-productivity/super-productivity/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+concept+and%2For+ui+spec%22)**
+At the end of the pilot, DCP will choose one of four paths:
 
-6. **[Report bugs](https://github.com/super-productivity/super-productivity/issues/new)**
+### Adopt
+Use Super Productivity mainly as-is with DCP conventions.
 
-7. **[Make a feature or improvement request](https://github.com/super-productivity/super-productivity/issues/new)**: Something can be done better? Something essential missing? Let us know!
+### Integrate
+Keep the core close to upstream and build external automation and reporting.
 
-8. **[Translations](https://github.com/super-productivity/super-productivity/tree/master/src/assets/i18n), Icons, etc.**: You don't have to be a programmer to help; **[learn how to contribute translations](https://github.com/super-productivity/super-productivity/wiki/2.18-Contribute-Translations)**!
+### Extend
+Create plugins, adapters or isolated extensions for validated needs.
 
-[//]: # '[![inlang status badge](https://badge.inlang.com/?url=github.com/super-productivity/super-productivity)](https://fink.inlang.com/github.com/super-productivity/super-productivity?ref=badge)'
-[//]: #
-[//]: # 'You can use the Fink Localization Editor to edit, lint, and add translations for different languages. [Contribute via fink Guide](https://inlang.com/g/6ddyhpoi).'
+### Stop
+End the experiment if the workflow creates more coordination cost than operational value.
 
-9. **[Sponsor the project](https://github.com/sponsors/johannesjo)**
+---
 
-10. **Create [custom plugins](https://github.com/super-productivity/super-productivity/wiki/2.15-Develop-a-Plugin)** or **[custom themes](https://github.com/super-productivity/super-productivity/wiki/3.09-Theming)**
+# About Super Productivity
 
-### Special Thanks to our Sponsors!!!
+Super Productivity is an open-source task management and productivity application with capabilities including task organization, sub-tasks, projects, tags, timeboxing, time tracking, Pomodoro, work summaries and integrations with tools such as GitHub and other issue providers.
 
-Recently support for Super Productivity has been growing! A big thank you to all our sponsors!
+Official project resources:
 
-_(If you are, intend to or have been a sponsor and want to be shown here, [please let me know](mailto:contact@super-productivity.com)!)_
+- Website: https://super-productivity.com/
+- Upstream repository: https://github.com/super-productivity/super-productivity
+- Documentation and wiki: https://github.com/super-productivity/super-productivity/wiki
+- Community discussions: https://github.com/super-productivity/super-productivity/discussions
 
-### Code Signing
+## Upstream relationship
 
-Windows binaries are signed. Free code signing is provided by [SignPath.io](https://signpath.io?utm_source=foundation&utm_medium=github&utm_campaign=super-productivity), certificate by [SignPath Foundation](https://signpath.org?utm_source=foundation&utm_medium=github&utm_campaign=super-productivity).
+This repository tracks and evaluates the upstream project for DCP use. DCP-specific documents and experiments must remain clearly separated from upstream-origin code and documentation.
 
-## Documentation: Manual versus Automated
+When synchronizing upstream changes:
 
-There are two wikis: the official one hosted in by GitHub and the autonomously generated variant using [DeepWiki.com](https://deepwiki.com/super-productivity/super-productivity). The manually curated version is a more stable and approachable resource designed to help you understand the app from a more human-focused perspective whereas DeepWiki is optimized for explaining the code itself with little regard for context beyond that.
+- preserve upstream attribution;
+- preserve license notices;
+- avoid presenting upstream functionality as DCP-authored;
+- keep DCP-specific work isolated and documented;
+- minimize unnecessary divergence.
 
-<div style="display: flex; gap: 10px; align-items: flex-start;">
+## License
 
-  <!-- Official Wiki -->
-  <div style="flex: 1;">
-    <h3>Official Wiki</h3>
-    <p>
-      It is preferable to maintain local documentation rather than rely on an external service.
-      It also preferable that the documentation is updated in tandem with the code changes as
-      demonstrated in
-      <a href="https://github.com/super-productivity/super-productivity/commit/7a51d4b06e414fdcc48e4999197a93eee9cd09da">this commit</a>.
-    </p>
-    <p>
-      Changes to files within <code>./docs/wiki</code> are linted in CI before being automatically
-      sync'd to the repository's official Wiki hosted by GitHub.
-    </p>
-    <p>
-      Migrating to Docusaurus is a long-term goal once the content and structure of the wiki has matured
-      and the remaining "legacy docs" have either been reworked or removed. There are some automations in development to help reduce the difference between the published docs and the state of the code while retaining a human-in-the-loop.
-    </p>
-  </div>
+This repository retains the upstream project's MIT license and copyright notices. DCP-specific documentation and modifications must be handled consistently with those license obligations.
 
-  <!-- DeepWiki -->
-  <div style="flex: 1;">
-    <h3>DeepWiki.com</h3>
-    <p>
-      If you have very specific questions about how the code works or why a bug might be producing
-      a particular message it might be useful to
-      <a href="https://deepwiki.com/super-productivity/super-productivity">
-        <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
-      </a>. It can help "cite your sources" when discussing functionality and code that you don't fully
-      understand as part of feature requests or bug reports.
-    </p>
-    <p>
-      This automated
-      <a href="https://diataxis.fr/reference/#reference">reference</a>
-      does come with some significant drawbacks:
-    </p>
-    <ol>
-      <li><strong>Intent:</strong> Describes what code does, not why decisions or tradeoffs were made.</li>
-      <li><strong>Staleness:</strong> Will *always* lag behind the code.</li>
-      <li><strong>Code-Focused:</strong> Does not provide guides or conceptual explanations.</li>
-      <li><strong>Cost:</strong> Potential future cost and higher resource usage than static docs.</li>
-    </ol>
-  </div>
-</div>
+---
+
+## Current status
+
+**Phase:** Internal evaluation baseline  
+**Next step:** Run the 14-day DCP pilot and update the GAP analysis with real evidence.
+
+**Digital Consulting Plus**  
+Practical digital transformation, applied AI, business systems and product engineering.
