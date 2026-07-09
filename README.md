@@ -1,5 +1,7 @@
 # Super Productivity DCP Lab
 
+🌐 **Languages:** English · [Español](README.es.md)
+
 **DCP evaluation lab based on Super Productivity for task management, focus, time tracking and GitHub-integrated workflows.**
 
 > This repository is a Digital Consulting Plus evaluation and integration lab based on the open-source **Super Productivity** project. It is not presented as an original DCP product and does not replace the upstream project or its community.
@@ -78,16 +80,31 @@ docs/dcp/
 ├── DCP_USE_CASES.md
 ├── INTEGRATION_ARCHITECTURE.md
 ├── GAP_ANALYSIS.md
-└── PILOT_PLAN.md
+├── PILOT_PLAN.md
+└── es/
+    ├── README.md
+    ├── EVALUACION_DCP.md
+    ├── CASOS_DE_USO_DCP.md
+    ├── ARQUITECTURA_DE_INTEGRACION.md
+    ├── ANALISIS_DE_BRECHAS.md
+    └── PLAN_PILOTO.md
 ```
 
-### Documents
+### English documents
 
 - [`DCP_EVALUATION.md`](docs/dcp/DCP_EVALUATION.md) — evaluation principles, scope and decision gates.
 - [`DCP_USE_CASES.md`](docs/dcp/DCP_USE_CASES.md) — concrete DCP product and business use cases.
 - [`INTEGRATION_ARCHITECTURE.md`](docs/dcp/INTEGRATION_ARCHITECTURE.md) — role of GitHub, KIKE_OS, n8n, Calendar and Super Productivity.
 - [`GAP_ANALYSIS.md`](docs/dcp/GAP_ANALYSIS.md) — current fit/gap matrix and development decision rules.
 - [`PILOT_PLAN.md`](docs/dcp/PILOT_PLAN.md) — proposed 14-day internal pilot.
+
+### Spanish documents
+
+- [`Evaluación DCP`](docs/dcp/es/EVALUACION_DCP.md)
+- [`Casos de uso DCP`](docs/dcp/es/CASOS_DE_USO_DCP.md)
+- [`Arquitectura de integración`](docs/dcp/es/ARQUITECTURA_DE_INTEGRACION.md)
+- [`Análisis de brechas`](docs/dcp/es/ANALISIS_DE_BRECHAS.md)
+- [`Plan piloto`](docs/dcp/es/PLAN_PILOTO.md)
 
 ## Operating principles
 
